@@ -1,0 +1,41 @@
+div{
+    width: calc(25% - 20px);
+    float:left; /* cho phép các thẻ div đứng cạnh nhau bên trái*/
+    border: 1px solid rgb(41, 193, 143); 
+    /* border-bottom, top, left, right */
+    margin: 10px; /* khoảng cách bên ngoài giữa các thẻ div */
+    padding: 10px; /* khoảng cách bên trong giữa viền và nội dung */
+    /* margin và padding có thể đặt riêng cho từng phía */
+    /* margin-top, bottom, left, right */
+    /* padding-top, bottom, left, right */
+    box-sizing: border-box; /* width sẽ bao gồm cả border và padding vào trong chiều rộng và chiều cao của thẻ */
+    /* có nghĩa là padding và border được cộng vào 25% luôn rồi không phải trừ nữa */
+
+    border-radius: 5px; /* bo tròn các góc của thẻ */
+    background-color: rgb(41, 193, 143); /* màu nền */
+}
+
+div:hover{ /* hiệu ứng giúp người dùng dễ nhận diện phần tử */
+    background-color: rgb(41, 143, 193); /* màu nền khi hover chuột vào thẻ */
+    transform: translate(0, -5px); /* di chuyển thẻ xuống dưới 5px */
+    transform: scale(1.05); /* phóng to thẻ lên 5% */
+    transform: rotate(45deg); /* xoay thẻ 45 độ */
+    transition: all 0.3s ease; /*hiệu ứng chuyển đổi mượt mà trong 0.3s */
+}
+
+
+img{
+    max-width: 100%; /* co hình ảnh về kích thước của thẻ cha nếu nó vượt quá */
+}
+
+.special{
+    background-color: pink;
+}
+
+.ti{
+
+}
+
+.bg-blue{
+    background-color: rgb(60, 111, 187);
+}
